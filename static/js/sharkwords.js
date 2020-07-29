@@ -13,7 +13,7 @@ let numWrong = 0;
 //
 const createDivsForChars = (word) => {
   for (const letter of word) {
-    $('#word-container').append(`<div class="letter-box ${letter}" ></div>`)
+    $('#word-container').append(`<div class="letter-box ${letter}" ></div>`);
     // $('ul').append('<li>Learn jQuery!</li>');
     //append to word container 
   }
@@ -23,7 +23,9 @@ const createDivsForChars = (word) => {
 // Loop over each letter in `ALPHABET` and generate buttons.
 //
 const generateLetterButtons = () => {
-  // Replace this with your code
+  for (const letter of ALPHABET) {
+    $('#letter-buttons').append(`<button>${letter}</button>`);
+  } 
 };
 
 
@@ -32,14 +34,15 @@ const generateLetterButtons = () => {
 // `buttonEl` is an `HTMLElement` object.
 //
 const disableLetterButton = (buttonEl) => {
-  // Replace this with your code
+  //   // $('img').attr('src');
+  $(buttonEL).attr('disabled', true);
 };
 
 
 // Return `true` if `letter` is in the word.
 //
 const isLetterInWord = (letter) => {
-  // Replace this with your code
+
 };
 
 
